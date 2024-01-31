@@ -255,7 +255,7 @@
     
     
     <entry>
-      <title>brew 服务错误 uninitialized constant Homebrew Service System</title>
+      <title>homebrew 服务错误 uninitialized constant Homebrew Service System</title>
       <link href="/posts/4132816066.html"/>
       <url>/posts/4132816066.html</url>
       
@@ -273,7 +273,7 @@
             
             <tag> macos </tag>
             
-            <tag> brew </tag>
+            <tag> homebrew </tag>
             
         </tags>
       
@@ -481,9 +481,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> homebrew </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -668,9 +668,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
             <tag> easywechat </tag>
             
@@ -1080,9 +1080,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
         </tags>
       
@@ -1311,9 +1311,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
         </tags>
       

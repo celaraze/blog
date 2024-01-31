@@ -1,8 +1,8 @@
 ---
-title: brew 服务错误 uninitialized constant Homebrew Service System
+title: homebrew 服务错误 uninitialized constant Homebrew Service System
 tags:
   - macos
-  - brew
+  - homebrew
 categories:
   - 运维
 abbrlink: 4132816066

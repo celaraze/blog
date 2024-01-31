@@ -21,12 +21,12 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: http://lab.celaraze.com:9999/blog/2024.png
+  touch_icon: http://lab.celaraze.com:9999/blog/2024.png
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
+  author_photo: http://lab.celaraze.com:9999/blog/2024.png
   author_nickname: Celaraze
   path: /
 
@@ -174,8 +174,8 @@ footer:
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
     -
-      name: Copyright © {thisYear} Oranges
-      path: https://github.com/zchengsite/hexo-theme-oranges
+      name: Copyright © {thisYear} Celaraze Blog
+      path: https://github.com/celaraze
     -
       name: Theme by Oranges | Powered by Hexo
       path: https://github.com/zchengsite/hexo-theme-oranges
@@ -205,7 +205,7 @@ footer:
 # 文章搜索
 search:
   enable: true
-  placeholder: 
+  placeholder: 输入任意内容以搜索
 
 # 深/浅配色切换
 colorSwitch:
@@ -225,7 +225,7 @@ postShare:
 codeBlock:
   # 代码块风格，默认normal
   # 可选：默认风格'normal'；mac黑色风格：'mac-black'
-  style: 'mac-black'
+  style: 'normal'
   # 代码复制
   copy:
     enable: true

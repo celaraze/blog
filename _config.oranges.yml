@@ -21,12 +21,12 @@
 # 网站图标
 favicon:
   enable: true
-  icon: http://lab.celaraze.com:9999/blog/2024.png
-  touch_icon: http://lab.celaraze.com:9999/blog/2024.png
+  icon: https://lab.celaraze.com:9999/blog/2024.png
+  touch_icon: https://lab.celaraze.com:9999/blog/2024.png
 
 # 用户头像与昵称
 avatar:
-  author_photo: http://lab.celaraze.com:9999/blog/2024.png
+  author_photo: https://lab.celaraze.com:9999/blog/2024.png
   author_nickname: Celaraze
   path: /
 

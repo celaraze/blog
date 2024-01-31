@@ -21,7 +21,7 @@ date: 2023-09-29 17:14:57
 `su` 进入 Root 模式，`cd /boot/loader/entries` 进入引导配置文件目录，这里面都是 `.conf` 文件，其实每个配置文件就是开机启动时候的一个选单，
 像我的是 `2023-09-28_08-11-24_linux.conf` ，那么 `sudo nano 2023-09-28_08-11-24_linux.conf` 编辑它。
 
-```git
+```diff
 # 以下 - 代码删除这行， + 代码增加这行，- 和 + 本身不需要输入，无视就好。
 
 title   Arch Linux (linux)

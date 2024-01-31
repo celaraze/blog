@@ -157,7 +157,7 @@
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2024-01-31 16:08:25
+          2024-01-31 16:19:32
         </span>
         
               <span class="post-categories">
@@ -199,7 +199,7 @@
         <h2 id="安装内核"><a href="#安装内核" class="headerlink" title="安装内核"></a>安装内核</h2><p>比如从 <code>linux</code> 内核版本切换到 <code>linux-lts</code> 版本，则执行 <code>sudo pacman -S linux-lts linux-lts-headers</code> 安装内核文件。</p>
 <p>其中 <code>linux-lts</code> 代表长期维护的内核版本包，而 <code>linux-lts-headers</code> 用于后期系统中编译和内核相关的驱动等需要使用到的头文件，建议同时安装。</p>
 <h2 id="切换内核"><a href="#切换内核" class="headerlink" title="切换内核"></a>切换内核</h2><p><code>su</code> 进入 Root 模式，<code>cd /boot/loader/entries</code> 进入引导配置文件目录，这里面都是 <code>.conf</code> 文件，其实每个配置文件就是开机启动时候的一个选单，<br>像我的是 <code>2023-09-28_08-11-24_linux.conf</code> ，那么 <code>sudo nano 2023-09-28_08-11-24_linux.conf</code> 编辑它。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 以下 - 代码删除这行， + 代码增加这行，- 和 + 本身不需要输入，无视就好。</span><br><span class="line"></span><br><span class="line">title   Arch Linux (linux)</span><br><span class="line">- linux   /vmlinuz-linux</span><br><span class="line">+ linux   /vmlinuz-linux-lts</span><br><span class="line">initrd  /intel-ucode.img</span><br><span class="line">- initrd  /initramfs-linux.img</span><br><span class="line">+ initrd  /initramfs-linux-lts.img</span><br><span class="line">options root=PARTUUID=8e39cade-c3f4-45b7-a5a0-f5a2a8b9fad2 zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs</span><br></pre></td></tr></table></figure>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 以下 - 代码删除这行， + 代码增加这行，- 和 + 本身不需要输入，无视就好。</span><br><span class="line"></span><br><span class="line">title   Arch Linux (linux)</span><br><span class="line"><span class="deletion">- linux   /vmlinuz-linux</span></span><br><span class="line"><span class="addition">+ linux   /vmlinuz-linux-lts</span></span><br><span class="line">initrd  /intel-ucode.img</span><br><span class="line"><span class="deletion">- initrd  /initramfs-linux.img</span></span><br><span class="line"><span class="addition">+ initrd  /initramfs-linux-lts.img</span></span><br><span class="line">options root=PARTUUID=8e39cade-c3f4-45b7-a5a0-f5a2a8b9fad2 zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs</span><br></pre></td></tr></table></figure>
 
 <p>修改完毕后重启系统，使用 <code>uname -a</code> 查看到已经切换到了新内核版本。</p>
 
@@ -217,7 +217,7 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2024-01-31 16:08:25
+              2024-01-31 16:19:32
             </span>
             
                   <span class="post-categories">

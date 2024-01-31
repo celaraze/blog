@@ -1,5 +1,5 @@
 ---
-title: 相册快速查找未命名的人物
+title: macOS 相册快速查找未命名的人物
 tags:
   - apple
 categories:

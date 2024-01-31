@@ -1,5 +1,5 @@
 ---
-title: 使用rsyslog远程发送MySQL查询日志到群晖日志中心
+title: 使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心
 tags:
   - mysql
   - syslog
@@ -65,12 +65,6 @@ input(type="imfile" File="/var/log/mysql/query.log" Tag="MySQL8")
 配置修改完毕后重启 rsyslog ：`sudo systemctl restart rsyslog`
 
 ## 群晖配置
-
-![](/images/posts/2.png)
-
-![](/images/posts/3.jpg)
-
-![](/images/posts/4.png)
 
 完成后即可在日志中心中查看其他服务器的所有日志，这里可以筛选。
 

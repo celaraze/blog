@@ -1,5 +1,5 @@
 ---
-title: ESXi8 中使用 USB 网卡作为管理端口并开机自启动
+title: ESXi 8.0 中使用 USB 网卡作为管理端口并开机自启动
 tags:
   - ESXi
 categories:

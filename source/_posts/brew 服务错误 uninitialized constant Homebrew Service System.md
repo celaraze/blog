@@ -1,5 +1,5 @@
 ---
-title: 'brew 服务错误 uninitialized constant Homebrew::Service::System'
+title: brew 服务错误 uninitialized constant Homebrew Service System
 tags:
   - macos
   - brew

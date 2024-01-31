@@ -13,7 +13,7 @@
   
   <title>
     
-      Ubuntu22.04个人安装配置 
+      Ubuntu 22.04 个人安装配置 
       
       
       |
@@ -153,11 +153,11 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">Ubuntu22.04个人安装配置</div>
+      <div class="post-title">Ubuntu 22.04 个人安装配置</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2024-01-31 16:08:25
+          2024-01-31 16:34:18
         </span>
         
               <span class="post-categories">
@@ -197,8 +197,6 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k</span><br><span class="line">echo &#x27;source ~/powerlevel10k/powerlevel10k.zsh-theme&#x27; &gt;&gt;~/.zshrc</span><br></pre></td></tr></table></figure>
 
 <p>配置 powerlevel10k 主题：<code>p10k configure</code>，按照提示选择个性化。</p>
-<h2 id="配置-rsyslog"><a href="#配置-rsyslog" class="headerlink" title="配置 rsyslog"></a>配置 rsyslog</h2><a href="/posts/358764167.html" title="使用rsyslog远程发送MySQL查询日志到群晖日志中心">使用rsyslog远程发送MySQL查询日志到群晖日志中心</a>
-
 <h2 id="配置-PV"><a href="#配置-PV" class="headerlink" title="配置 PV"></a>配置 PV</h2><p>这个能让命令带上进度条</p>
 <p><code>sudo apt install pv</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">压缩文件夹</span></span><br><span class="line"></span><br><span class="line">tar -cPf - &quot;要压缩的文件目录&quot;| pv -s $(($(du -sk &quot;要压缩的文件目录&quot; | awk &#x27;&#123;print $1&#125;&#x27;) * 1024)) | gzip &gt; 文件名.tar.gz</span><br></pre></td></tr></table></figure>
@@ -236,7 +234,7 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2024-01-31 16:08:25
+              2024-01-31 16:34:18
             </span>
             
                   <span class="post-categories">
@@ -281,7 +279,7 @@
     <div class="title">目录</div>
     <div class="catalog-content">
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-oh-my-zsh"><span class="toc-text">配置 oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-rsyslog"><span class="toc-text">配置 rsyslog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-PV"><span class="toc-text">配置 PV</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-CIFS"><span class="toc-text">配置 CIFS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-CRONTAB"><span class="toc-text">配置 CRONTAB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3-PCIE-Bus-Error"><span class="toc-text">解决 PCIE Bus Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL-8"><span class="toc-text">MySQL 8</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-oh-my-zsh"><span class="toc-text">配置 oh-my-zsh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-PV"><span class="toc-text">配置 PV</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-CIFS"><span class="toc-text">配置 CIFS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-CRONTAB"><span class="toc-text">配置 CRONTAB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3-PCIE-Bus-Error"><span class="toc-text">解决 PCIE Bus Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL-8"><span class="toc-text">MySQL 8</span></a></li></ol>
       
     </div>
   </div>

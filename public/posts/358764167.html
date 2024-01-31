@@ -13,7 +13,7 @@
   
   <title>
     
-      使用rsyslog远程发送MySQL查询日志到群晖日志中心 
+      使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心 
       
       
       |
@@ -153,11 +153,11 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">使用rsyslog远程发送MySQL查询日志到群晖日志中心</div>
+      <div class="post-title">使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2024-01-31 16:08:25
+          2024-01-31 16:33:43
         </span>
         
               <span class="post-categories">
@@ -181,14 +181,14 @@
                 </span>
                 
                 <span class="span--tag mr-8">
-                  <a href="/tags/synology/" title="synology">
-                    #synology
+                  <a href="/tags/syslog/" title="syslog">
+                    #syslog
                   </a>
                 </span>
                 
                 <span class="span--tag mr-8">
-                  <a href="/tags/syslog/" title="syslog">
-                    #syslog
+                  <a href="/tags/synology/" title="synology">
+                    #synology
                   </a>
                 </span>
                 
@@ -207,10 +207,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 进入到 rsyslog 配置文件，例如在 Ubuntu 中默认位置为：</span><br><span class="line"># /etc/rsyslog.conf</span><br><span class="line"></span><br><span class="line">#################</span><br><span class="line">#### MODULES ####</span><br><span class="line">#################</span><br><span class="line"></span><br><span class="line"># 在模块下面添加以下规则</span><br><span class="line"></span><br><span class="line">module(load=&quot;imfile&quot; PollingInterval=&quot;5&quot;)</span><br><span class="line"></span><br><span class="line"># 这里记得要指定到 MySQL 查询日志文件路径</span><br><span class="line"># Tag会影响在群晖日志中心里面的显示是来自哪个程序的日志</span><br><span class="line">input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 如果有多个日志文件，直接多一行相同规则</span><br><span class="line"># input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 下面这个规则是启用本机全部的日志信息发送到指定IP:port</span><br><span class="line"># 这里也就是我的群晖</span><br><span class="line">*.* @192.168.222.100:514</span><br></pre></td></tr></table></figure>
 
 <p>配置修改完毕后重启 rsyslog ：<code>sudo systemctl restart rsyslog</code></p>
-<h2 id="群晖配置"><a href="#群晖配置" class="headerlink" title="群晖配置"></a>群晖配置</h2><p><img src="/images/posts/2.png"></p>
-<p><img src="/images/posts/3.jpg"></p>
-<p><img src="/images/posts/4.png"></p>
-<p>完成后即可在日志中心中查看其他服务器的所有日志，这里可以筛选。</p>
+<h2 id="群晖配置"><a href="#群晖配置" class="headerlink" title="群晖配置"></a>群晖配置</h2><p>完成后即可在日志中心中查看其他服务器的所有日志，这里可以筛选。</p>
 <p>配合群晖自带的消息通知，当 MySQL 日志存在紧急等级时，就能收到邮件告警了。</p>
 
       </div>
@@ -227,7 +224,7 @@
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2024-01-31 16:08:25
+              2024-01-31 16:33:43
             </span>
             
                   <span class="post-categories">
@@ -251,14 +248,14 @@
                     </span>
                     
                     <span class="span--tag mr-8">
-                      <a href="/tags/synology/" title="synology">
-                        #synology
+                      <a href="/tags/syslog/" title="syslog">
+                        #syslog
                       </a>
                     </span>
                     
                     <span class="span--tag mr-8">
-                      <a href="/tags/syslog/" title="syslog">
-                        #syslog
+                      <a href="/tags/synology/" title="synology">
+                        #synology
                       </a>
                     </span>
                     

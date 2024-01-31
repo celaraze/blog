@@ -1,5 +1,5 @@
 ---
-title: 手持PDA上的激光扫码完美解决方案
+title: uniapp 在手持 PDA 上的激光扫码解决方案
 tags:
   - uniapp
 categories:

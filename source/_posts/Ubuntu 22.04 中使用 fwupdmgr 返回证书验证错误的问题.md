@@ -1,5 +1,5 @@
 ---
-title: Ubuntu22.04中使用fwupdmgr返回证书验证错误的问题
+title: Ubuntu 22.04 中使用 fwupdmgr 返回证书验证错误的问题
 tags:
   - ubuntu
 categories:

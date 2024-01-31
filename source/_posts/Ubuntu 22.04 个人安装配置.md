@@ -1,5 +1,5 @@
 ---
-title: Ubuntu22.04个人安装配置
+title: Ubuntu 22.04 个人安装配置
 tags:
   - ubuntu
 categories:
@@ -38,10 +38,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 配置 powerlevel10k 主题：`p10k configure`，按照提示选择个性化。
-
-## 配置 rsyslog
-
-{% post_link send-mysql-logs-to-synology-with-rsyslog %}
 
 ## 配置 PV
 

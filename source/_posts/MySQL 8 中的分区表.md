@@ -1,5 +1,5 @@
 ---
-title: MySQL8中的分区表
+title: MySQL 8 中的分区表
 tags:
   - mysql
 categories:

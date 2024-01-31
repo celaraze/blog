@@ -1,7 +1,5 @@
 ---
-title: >-
-  执行 brew update 命令时出现错误：The last gc run reported the following. Please correct
-  the root cause and remove .git/gc.log.
+title: 执行 brew update 命令时出现错误：The last gc run reported the following
 tags:
   - macOS
   - homebrew

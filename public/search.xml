@@ -49,11 +49,11 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> archlinux </tag>
             
             <tag> systemd-boot </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -149,7 +149,7 @@
     
     
     <entry>
-      <title>ESXi8 中使用 USB 网卡作为管理端口并开机自启动</title>
+      <title>ESXi 8.0 中使用 USB 网卡作为管理端口并开机自启动</title>
       <link href="/posts/2878085857.html"/>
       <url>/posts/2878085857.html</url>
       
@@ -255,7 +255,7 @@
     
     
     <entry>
-      <title>brew 服务错误 uninitialized constant Homebrew::Service::System</title>
+      <title>brew 服务错误 uninitialized constant Homebrew Service System</title>
       <link href="/posts/4132816066.html"/>
       <url>/posts/4132816066.html</url>
       
@@ -282,7 +282,7 @@
     
     
     <entry>
-      <title>Ubuntu22.04中使用fwupdmgr返回证书验证错误的问题</title>
+      <title>Ubuntu 22.04 中使用 fwupdmgr 返回证书验证错误的问题</title>
       <link href="/posts/502798705.html"/>
       <url>/posts/502798705.html</url>
       
@@ -307,11 +307,11 @@
     
     
     <entry>
-      <title>Ubuntu22.04个人安装配置</title>
+      <title>Ubuntu 22.04 个人安装配置</title>
       <link href="/posts/1766885307.html"/>
       <url>/posts/1766885307.html</url>
       
-        <content type="html"><![CDATA[<h2 id="配置-oh-my-zsh"><a href="#配置-oh-my-zsh" class="headerlink" title="配置 oh-my-zsh"></a>配置 oh-my-zsh</h2><p>安装 ZSH：<code>sudo apt install zsh</code></p><p>安装 oh-my-zsh：</p><p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></p><p>安装 zsh-autosuggestions 自动补全：</p><p><code>git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions</code></p><p>安装 zsh-syntax-highlighting 语法高亮：<br><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting</code></p><p>在 <code>~/.zshrc</code> 文件中找到以下内容并修改：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下面添加 zsh-autosuggestions 和 zsh-syntax-highlighting</span></span><br><span class="line">plugins=(git zsh-autosuggestions zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure><p>安装 powerlevel10k 主题：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k</span><br><span class="line">echo &#x27;source ~/powerlevel10k/powerlevel10k.zsh-theme&#x27; &gt;&gt;~/.zshrc</span><br></pre></td></tr></table></figure><p>配置 powerlevel10k 主题：<code>p10k configure</code>，按照提示选择个性化。</p><h2 id="配置-rsyslog"><a href="#配置-rsyslog" class="headerlink" title="配置 rsyslog"></a>配置 rsyslog</h2><a href="/posts/358764167.html" title="使用rsyslog远程发送MySQL查询日志到群晖日志中心">使用rsyslog远程发送MySQL查询日志到群晖日志中心</a><h2 id="配置-PV"><a href="#配置-PV" class="headerlink" title="配置 PV"></a>配置 PV</h2><p>这个能让命令带上进度条</p><p><code>sudo apt install pv</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">压缩文件夹</span></span><br><span class="line"></span><br><span class="line">tar -cPf - &quot;要压缩的文件目录&quot;| pv -s $(($(du -sk &quot;要压缩的文件目录&quot; | awk &#x27;&#123;print $1&#125;&#x27;) * 1024)) | gzip &gt; 文件名.tar.gz</span><br></pre></td></tr></table></figure><h2 id="配置-CIFS"><a href="#配置-CIFS" class="headerlink" title="配置 CIFS"></a>配置 CIFS</h2><p>方便的挂载群晖共享盘的工具</p><p><code>sudo apt install cifs-utils</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"></span><br><span class="line">sudo mkdir /mnt/nas</span><br><span class="line">sudo mount -t cifs -o uid=root,username=群晖用户名,password=群晖密码 //群晖地址/共享目录 /mnt/nas</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">取消挂载</span></span><br><span class="line">sudo umount nas</span><br></pre></td></tr></table></figure><p>开机自动挂载需要修改 fstab 配置，<code>sudo nano /etc/fstab</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//群晖地址/共享目录 /mnt/nas cifs defaults,username=群晖用户名,password=群晖密码 0 0</span><br></pre></td></tr></table></figure><h2 id="配置-CRONTAB"><a href="#配置-CRONTAB" class="headerlink" title="配置 CRONTAB"></a>配置 CRONTAB</h2><p>这个能做计划任务，但是千万不要手动去修改 crontab 文件，而是用 <code>sudo crontab -e</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">定期备份数据库文件到群晖</span></span><br><span class="line"></span><br><span class="line">0 3 * * * rsync -av --progress /var/lib/mysql /mnt/backup/BRAVOBackupData/MySQL</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果备份目的地要删除来源地已经删除的文件那就加上 --delete 参数，比如：</span></span><br><span class="line"></span><br><span class="line">0 3 * * * rsync -av --progress --delete /var/lib/mysql /mnt/backup/BRAVOBackupData/MySQL</span><br></pre></td></tr></table></figure><h2 id="解决-PCIE-Bus-Error"><a href="#解决-PCIE-Bus-Error" class="headerlink" title="解决 PCIE Bus Error"></a>解决 PCIE Bus Error</h2><p>这个问题大概率是由于 nvme 硬盘引起的，是 Ubuntu 内核问题。</p><p>修改 GRUB ，<code>sudo nano /etc/default/grub</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在文件最后加入</span></span><br><span class="line"></span><br><span class="line">GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash pci=nommconf&quot;</span><br></pre></td></tr></table></figure><p>修改完成后更新 GRUB，<code>sudo update-grub</code></p><p>然后重启服务器。</p><h2 id="MySQL-8"><a href="#MySQL-8" class="headerlink" title="MySQL 8"></a>MySQL 8</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br><span class="line"></span><br><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY &#x27;password&#x27;;</span><br><span class="line"></span><br><span class="line">CREATE USER &#x27;root&#x27;@&#x27;%&#x27; IDENTIFIED BY &#x27;password&#x27;;</span><br><span class="line"></span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO &#x27;root&#x27;@&#x27;%&#x27;;</span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">nano /etc/mysql/mysql.conf.d/mysqld.cnf</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">注释掉下面这行，然后 service mysql restart 重启服务。</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">bind-address = 127.0.0.1</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h2 id="配置-oh-my-zsh"><a href="#配置-oh-my-zsh" class="headerlink" title="配置 oh-my-zsh"></a>配置 oh-my-zsh</h2><p>安装 ZSH：<code>sudo apt install zsh</code></p><p>安装 oh-my-zsh：</p><p><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></p><p>安装 zsh-autosuggestions 自动补全：</p><p><code>git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions</code></p><p>安装 zsh-syntax-highlighting 语法高亮：<br><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting</code></p><p>在 <code>~/.zshrc</code> 文件中找到以下内容并修改：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下面添加 zsh-autosuggestions 和 zsh-syntax-highlighting</span></span><br><span class="line">plugins=(git zsh-autosuggestions zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure><p>安装 powerlevel10k 主题：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k</span><br><span class="line">echo &#x27;source ~/powerlevel10k/powerlevel10k.zsh-theme&#x27; &gt;&gt;~/.zshrc</span><br></pre></td></tr></table></figure><p>配置 powerlevel10k 主题：<code>p10k configure</code>，按照提示选择个性化。</p><h2 id="配置-PV"><a href="#配置-PV" class="headerlink" title="配置 PV"></a>配置 PV</h2><p>这个能让命令带上进度条</p><p><code>sudo apt install pv</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">压缩文件夹</span></span><br><span class="line"></span><br><span class="line">tar -cPf - &quot;要压缩的文件目录&quot;| pv -s $(($(du -sk &quot;要压缩的文件目录&quot; | awk &#x27;&#123;print $1&#125;&#x27;) * 1024)) | gzip &gt; 文件名.tar.gz</span><br></pre></td></tr></table></figure><h2 id="配置-CIFS"><a href="#配置-CIFS" class="headerlink" title="配置 CIFS"></a>配置 CIFS</h2><p>方便的挂载群晖共享盘的工具</p><p><code>sudo apt install cifs-utils</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"></span><br><span class="line">sudo mkdir /mnt/nas</span><br><span class="line">sudo mount -t cifs -o uid=root,username=群晖用户名,password=群晖密码 //群晖地址/共享目录 /mnt/nas</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">取消挂载</span></span><br><span class="line">sudo umount nas</span><br></pre></td></tr></table></figure><p>开机自动挂载需要修改 fstab 配置，<code>sudo nano /etc/fstab</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//群晖地址/共享目录 /mnt/nas cifs defaults,username=群晖用户名,password=群晖密码 0 0</span><br></pre></td></tr></table></figure><h2 id="配置-CRONTAB"><a href="#配置-CRONTAB" class="headerlink" title="配置 CRONTAB"></a>配置 CRONTAB</h2><p>这个能做计划任务，但是千万不要手动去修改 crontab 文件，而是用 <code>sudo crontab -e</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">举个例子</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">定期备份数据库文件到群晖</span></span><br><span class="line"></span><br><span class="line">0 3 * * * rsync -av --progress /var/lib/mysql /mnt/backup/BRAVOBackupData/MySQL</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果备份目的地要删除来源地已经删除的文件那就加上 --delete 参数，比如：</span></span><br><span class="line"></span><br><span class="line">0 3 * * * rsync -av --progress --delete /var/lib/mysql /mnt/backup/BRAVOBackupData/MySQL</span><br></pre></td></tr></table></figure><h2 id="解决-PCIE-Bus-Error"><a href="#解决-PCIE-Bus-Error" class="headerlink" title="解决 PCIE Bus Error"></a>解决 PCIE Bus Error</h2><p>这个问题大概率是由于 nvme 硬盘引起的，是 Ubuntu 内核问题。</p><p>修改 GRUB ，<code>sudo nano /etc/default/grub</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在文件最后加入</span></span><br><span class="line"></span><br><span class="line">GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash pci=nommconf&quot;</span><br></pre></td></tr></table></figure><p>修改完成后更新 GRUB，<code>sudo update-grub</code></p><p>然后重启服务器。</p><h2 id="MySQL-8"><a href="#MySQL-8" class="headerlink" title="MySQL 8"></a>MySQL 8</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br><span class="line"></span><br><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH MYSQL_NATIVE_PASSWORD BY &#x27;password&#x27;;</span><br><span class="line"></span><br><span class="line">CREATE USER &#x27;root&#x27;@&#x27;%&#x27; IDENTIFIED BY &#x27;password&#x27;;</span><br><span class="line"></span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO &#x27;root&#x27;@&#x27;%&#x27;;</span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">nano /etc/mysql/mysql.conf.d/mysqld.cnf</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">注释掉下面这行，然后 service mysql restart 重启服务。</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">bind-address = 127.0.0.1</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -384,7 +384,7 @@
     
     
     <entry>
-      <title>MySQL8中的分区表</title>
+      <title>MySQL 8 中的分区表</title>
       <link href="/posts/1412232896.html"/>
       <url>/posts/1412232896.html</url>
       
@@ -409,11 +409,11 @@
     
     
     <entry>
-      <title>使用rsyslog远程发送MySQL查询日志到群晖日志中心</title>
+      <title>使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心</title>
       <link href="/posts/358764167.html"/>
       <url>/posts/358764167.html</url>
       
-        <content type="html"><![CDATA[<h2 id="客户机的-MySQL-配置"><a href="#客户机的-MySQL-配置" class="headerlink" title="客户机的 MySQL 配置"></a>客户机的 MySQL 配置</h2><p>默认 MySQL 不开启查询日志记录，这个东西很影响性能，如果服务器够强，可以开启，方法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 进入到 mysql 的配置文件，例如在 Ubuntu 中默认位置为：</span><br><span class="line"># /etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line"></span><br><span class="line"># 找到以下键值对，取消前面的注释使其生效</span><br><span class="line">general_log_file        = /var/log/mysql/query.log</span><br><span class="line">general_log             = 1</span><br><span class="line"></span><br><span class="line"># 在最后增加一条时区设置的配置，如果没有它，日志内的时间戳是UTC的</span><br><span class="line">log_timestamps = SYSTEM</span><br></pre></td></tr></table></figure><p>配置修改完毕后重启 MySQL ：<code>sudo systemctl restart mysql</code></p><p>然后给 MySQL 查询日志文件赋予全员可读取的权限：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod 644 /var/log/mysql/query.log</span><br></pre></td></tr></table></figure><h2 id="客户机的-rsyslog-配置"><a href="#客户机的-rsyslog-配置" class="headerlink" title="客户机的 rsyslog 配置"></a>客户机的 rsyslog 配置</h2><p>我们需要在 rsyslog 的配置文件中写入日志获取和发送的规则：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 进入到 rsyslog 配置文件，例如在 Ubuntu 中默认位置为：</span><br><span class="line"># /etc/rsyslog.conf</span><br><span class="line"></span><br><span class="line">#################</span><br><span class="line">#### MODULES ####</span><br><span class="line">#################</span><br><span class="line"></span><br><span class="line"># 在模块下面添加以下规则</span><br><span class="line"></span><br><span class="line">module(load=&quot;imfile&quot; PollingInterval=&quot;5&quot;)</span><br><span class="line"></span><br><span class="line"># 这里记得要指定到 MySQL 查询日志文件路径</span><br><span class="line"># Tag会影响在群晖日志中心里面的显示是来自哪个程序的日志</span><br><span class="line">input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 如果有多个日志文件，直接多一行相同规则</span><br><span class="line"># input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 下面这个规则是启用本机全部的日志信息发送到指定IP:port</span><br><span class="line"># 这里也就是我的群晖</span><br><span class="line">*.* @192.168.222.100:514</span><br></pre></td></tr></table></figure><p>配置修改完毕后重启 rsyslog ：<code>sudo systemctl restart rsyslog</code></p><h2 id="群晖配置"><a href="#群晖配置" class="headerlink" title="群晖配置"></a>群晖配置</h2><p><img src="/images/posts/2.png"></p><p><img src="/images/posts/3.jpg"></p><p><img src="/images/posts/4.png"></p><p>完成后即可在日志中心中查看其他服务器的所有日志，这里可以筛选。</p><p>配合群晖自带的消息通知，当 MySQL 日志存在紧急等级时，就能收到邮件告警了。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="客户机的-MySQL-配置"><a href="#客户机的-MySQL-配置" class="headerlink" title="客户机的 MySQL 配置"></a>客户机的 MySQL 配置</h2><p>默认 MySQL 不开启查询日志记录，这个东西很影响性能，如果服务器够强，可以开启，方法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 进入到 mysql 的配置文件，例如在 Ubuntu 中默认位置为：</span><br><span class="line"># /etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line"></span><br><span class="line"># 找到以下键值对，取消前面的注释使其生效</span><br><span class="line">general_log_file        = /var/log/mysql/query.log</span><br><span class="line">general_log             = 1</span><br><span class="line"></span><br><span class="line"># 在最后增加一条时区设置的配置，如果没有它，日志内的时间戳是UTC的</span><br><span class="line">log_timestamps = SYSTEM</span><br></pre></td></tr></table></figure><p>配置修改完毕后重启 MySQL ：<code>sudo systemctl restart mysql</code></p><p>然后给 MySQL 查询日志文件赋予全员可读取的权限：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod 644 /var/log/mysql/query.log</span><br></pre></td></tr></table></figure><h2 id="客户机的-rsyslog-配置"><a href="#客户机的-rsyslog-配置" class="headerlink" title="客户机的 rsyslog 配置"></a>客户机的 rsyslog 配置</h2><p>我们需要在 rsyslog 的配置文件中写入日志获取和发送的规则：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 进入到 rsyslog 配置文件，例如在 Ubuntu 中默认位置为：</span><br><span class="line"># /etc/rsyslog.conf</span><br><span class="line"></span><br><span class="line">#################</span><br><span class="line">#### MODULES ####</span><br><span class="line">#################</span><br><span class="line"></span><br><span class="line"># 在模块下面添加以下规则</span><br><span class="line"></span><br><span class="line">module(load=&quot;imfile&quot; PollingInterval=&quot;5&quot;)</span><br><span class="line"></span><br><span class="line"># 这里记得要指定到 MySQL 查询日志文件路径</span><br><span class="line"># Tag会影响在群晖日志中心里面的显示是来自哪个程序的日志</span><br><span class="line">input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 如果有多个日志文件，直接多一行相同规则</span><br><span class="line"># input(type=&quot;imfile&quot; File=&quot;/var/log/mysql/query.log&quot; Tag=&quot;MySQL8&quot;)</span><br><span class="line"></span><br><span class="line"># 下面这个规则是启用本机全部的日志信息发送到指定IP:port</span><br><span class="line"># 这里也就是我的群晖</span><br><span class="line">*.* @192.168.222.100:514</span><br></pre></td></tr></table></figure><p>配置修改完毕后重启 rsyslog ：<code>sudo systemctl restart rsyslog</code></p><h2 id="群晖配置"><a href="#群晖配置" class="headerlink" title="群晖配置"></a>群晖配置</h2><p>完成后即可在日志中心中查看其他服务器的所有日志，这里可以筛选。</p><p>配合群晖自带的消息通知，当 MySQL 日志存在紧急等级时，就能收到邮件告警了。</p>]]></content>
       
       
       <categories>
@@ -427,9 +427,9 @@
             
             <tag> mysql </tag>
             
-            <tag> synology </tag>
-            
             <tag> syslog </tag>
+            
+            <tag> synology </tag>
             
         </tags>
       
@@ -454,9 +454,9 @@
       
         <tags>
             
-            <tag> openwrt </tag>
-            
             <tag> linux </tag>
+            
+            <tag> openwrt </tag>
             
         </tags>
       
@@ -465,7 +465,7 @@
     
     
     <entry>
-      <title>执行 brew update 命令时出现错误：The last gc run reported the following. Please correct the root cause and remove .git/gc.log.</title>
+      <title>执行 brew update 命令时出现错误：The last gc run reported the following</title>
       <link href="/posts/3288834191.html"/>
       <url>/posts/3288834191.html</url>
       
@@ -533,9 +533,9 @@
       
         <tags>
             
-            <tag> macos </tag>
-            
             <tag> python </tag>
+            
+            <tag> macos </tag>
             
             <tag> sqlserver </tag>
             
@@ -546,7 +546,7 @@
     
     
     <entry>
-      <title>Laravel 与 SAP 集成出现的unicode编码问题</title>
+      <title>Laravel 与 SAP 集成出现的 unicode 编码问题</title>
       <link href="/posts/3939004902.html"/>
       <url>/posts/3939004902.html</url>
       
@@ -668,11 +668,11 @@
       
         <tags>
             
+            <tag> laravel </tag>
+            
             <tag> php </tag>
             
             <tag> easywechat </tag>
-            
-            <tag> laravel </tag>
             
         </tags>
       
@@ -760,11 +760,11 @@
     
     
     <entry>
-      <title>BCM943602CS 满速 1.3G 适配WIN10/11无线网卡驱动</title>
+      <title>BCM943602CS 满速 1.3G 适配 Windows 无线网卡驱动</title>
       <link href="/posts/2539914005.html"/>
       <url>/posts/2539914005.html</url>
       
-        <content type="html"><![CDATA[<p><code>BCM943602CS</code> 无线网卡可以完美适配黑苹果，所以我买了这个在 macOS 下速度能拉满，但是到了 Windows10 下面发现速率是 561Mbps，可是实际下载速度才 5mb&#x2F;s，第一反应是驱动问题，这款无线网卡在 Windows10 下面不会自动更新，且能网上找到的最新驱动也是 2016 年 11 月份的，谷歌了一下，果然是驱动问题，找到了一个 2020 年的驱动，安装，舒服了，下载速度再次拉满带宽，40mb&#x2F;s。</p><p>驱动下载：<a href="https://lab.celaraze.com:9999:broadcom-802-11ac-network-adapter-7.77.119.0.zip">broadcom-802-11ac-network-adapter-7.77.119.0.zip</a></p>]]></content>
+        <content type="html"><![CDATA[<p><code>BCM943602CS</code> 无线网卡可以完美适配黑苹果，所以我买了这个在 macOS 下速度能拉满，但是到了 Windows10 下面发现速率是 561Mbps，可是实际下载速度才 5mb&#x2F;s，第一反应是驱动问题，这款无线网卡在 Windows10 下面不会自动更新，且能网上找到的最新驱动也是 2016 年 11 月份的，谷歌了一下，果然是驱动问题，找到了一个 2020 年的驱动，安装，舒服了，下载速度再次拉满带宽，40mb&#x2F;s。</p><p>驱动下载：<a href="https://lab.celaraze.com:9999/broadcom-802-11ac-network-adapter-7.77.119.0.zip">broadcom-802-11ac-network-adapter-7.77.119.0.zip</a></p>]]></content>
       
       
       <categories>
@@ -995,7 +995,7 @@
     
     
     <entry>
-      <title>相册快速查找未命名的人物</title>
+      <title>macOS 相册快速查找未命名的人物</title>
       <link href="/posts/3294883727.html"/>
       <url>/posts/3294883727.html</url>
       
@@ -1080,9 +1080,9 @@
       
         <tags>
             
-            <tag> php </tag>
-            
             <tag> laravel </tag>
+            
+            <tag> php </tag>
             
         </tags>
       
@@ -1143,7 +1143,7 @@
     
     
     <entry>
-      <title>手持PDA上的激光扫码完美解决方案</title>
+      <title>uniapp 在手持 PDA 上的激光扫码解决方案</title>
       <link href="/posts/1961076235.html"/>
       <url>/posts/1961076235.html</url>
       
@@ -1311,9 +1311,9 @@
       
         <tags>
             
-            <tag> php </tag>
-            
             <tag> laravel </tag>
+            
+            <tag> php </tag>
             
         </tags>
       

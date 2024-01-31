@@ -16,7 +16,7 @@ timezone: 'Asia/Shanghai'
 url: https://celaraze.com
 #permalink: :year/:month/:day/:title/
 #permalink_defaults:
-permalink: posts/:abbrlink
+permalink: posts/:abbrlink/
 abbrlink:
   alg: crc32 #support crc16(default) and crc32
   rep: dec   #support dec(default) and hex

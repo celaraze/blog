@@ -1,0 +1,80 @@
+open_graph:
+  enable: true
+  twitter_id: # for open_graph meta
+
+article:
+  type: tech # tech/story
+  auto_cover: false
+  auto_excerpt: 200
+
+logo:
+  subtitle: '全栈工程师|咖啡、足球、帕鲁世界！' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+
+# 侧边栏主功能导航菜单
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+     - id: post  # 页面中高亮的 menu_id
+       theme: '#1BCDFC' # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+       icon: solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+       title: 文章 # 标题
+       url: / # 跳转链接，支持相对路径和绝对路径
+     - id: wiki
+       theme: '#3DC550'
+       icon: solar:notebook-bookmark-bold-duotone
+       title: 项目文档
+       url: /wiki/
+     - id: essays
+       theme: '#FA6400'
+       icon: solar:planet-bold-duotone
+       title: 时光
+       url: /essays/
+     - id: friends
+       theme: '#F44336'
+       icon: solar:chat-square-like-bold-duotone
+       title: 社交
+       url: /friends/
+
+copycode:
+  enable: true
+  js: /js/plugins/copycode.js
+  default_text: '复制代码' # 按钮显示文字
+  success_text: '已复制' # 复制成功信息
+
+link:
+  underline: true # true / false
+
+site_tree:
+  blog:
+    nav_tabs: # 近期发布 分类 标签 归档 and ...
+      #'朋友文章': /friends/rss/ # 这里填写的链接要与对应页面一致，否则可能无法正确高亮
+
+inject:
+  head:
+    - <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" rel="stylesheet">
+  script:
+
+style:
+  font-family:
+    body: '"LXGW WenKai Screen", "Microsoft Yahei", sans-serif'
+
+comments:
+  service: giscus
+  # giscus
+  # https://giscus.app/zh-CN
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: celaraze/blog-discussions # [在此输入仓库]
+    data-repo-id: R_kgDOLMC0nQ # [在此输入仓库 ID]
+    data-category: Announcements  # [在此输入分类名]
+    data-category-id: DIC_kwDOLMC0nc4Cc1ct
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
+

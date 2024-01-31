@@ -1,9 +1,5 @@
 ---
 title: about
-date: 2024-01-31 14:09:49
-type: "about"
-categories:
-tags:
 ---
 1991 年 00 岁：在常熟市徐市镇（现董浜）出生。
 

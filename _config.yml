@@ -4,6 +4,8 @@
 
 # Site
 title: Celaraze Blog
+avatar: https://lab.celaraze.com:9999/blog/logo.png
+favicon: https://lab.celaraze.com:9999/blog/logo.png
 subtitle: ''
 description: ''
 keywords:
@@ -100,7 +102,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: oranges
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

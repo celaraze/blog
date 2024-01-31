@@ -85,15 +85,17 @@ navbar:
     path: /
     key: home
   -
-    name: 归档
+    name: 文章
     enable: true
     path: /archives/
     key: archives
+
   -
     name: 分类
     enable: true
     path: /categories/
     key: categories
+
   -
     name: 标签
     enable: true
@@ -101,7 +103,7 @@ navbar:
     key: tags
   -
     name: 友链
-    enable: false
+    enable: true
     path: /friends/
     key: friends
   -

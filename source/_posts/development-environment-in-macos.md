@@ -1,11 +1,12 @@
 ---
 title: macOS（M1）纯净开发环境方案
-date: 2021-08-18 17:19:23
 tags:
   - macos
   - parallels
-categories: 
+categories:
   - 运维
+abbrlink: 246063876
+date: 2021-08-18 17:19:23
 ---
 
 ## 踩坑与结局

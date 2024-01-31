@@ -1,10 +1,11 @@
 ---
 title: 移除 Ubuntu 中的 APT Repository
-date: 2023-05-03 11:40:35
 tags:
   - ubuntu
-categories: 
+categories:
   - 运维
+abbrlink: 1881378502
+date: 2023-05-03 11:40:35
 ---
 
 1：删除源目录中的清单：

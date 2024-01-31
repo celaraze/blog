@@ -1,10 +1,11 @@
 ---
 title: 渗透攻击目标无线网络
-date: 2023-03-18 13:26:58
 tags:
   - kali
-categories: 
+categories:
   - 网络安全
+abbrlink: 3608793648
+date: 2023-03-18 13:26:58
 ---
 
 1：确认网卡名称 `iwconfig`

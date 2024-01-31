@@ -1,11 +1,12 @@
 ---
 title: 在 Apple M1 上安装 Tensorflow
-date: 2021-09-09 14:57:44
 tags:
   - apple
   - tensorflow
 categories:
   - 运维
+abbrlink: 750283883
+date: 2021-09-09 14:57:44
 ---
 
 requirements.yml：

@@ -1,10 +1,11 @@
 ---
 title: macOS (M1) 安装 Swoole 提示：pcre2.h file not found
-date: 2021-08-18 17:00:12
-tags: 
+tags:
   - swoole
-categories: 
+categories:
   - 运维
+abbrlink: 4292174570
+date: 2021-08-18 17:00:12
 ---
 
 ```bash

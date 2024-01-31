@@ -1,12 +1,13 @@
 ---
 title: Arch Linux systemd-boot 引导启动模式切换 Linux 内核
-date: 2023-09-29 17:14:57
 tags:
   - archlinux
   - systemd-boot
   - linux
 categories:
   - 运维
+abbrlink: 1760597164
+date: 2023-09-29 17:14:57
 ---
 
 ## 安装内核

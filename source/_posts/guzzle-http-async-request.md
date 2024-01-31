@@ -1,11 +1,12 @@
 ---
 title: GuzzleHttp 并发异步请求
-date: 2021-08-18 17:20:28
 tags:
   - php
   - guzzlehttp
-categories: 
+categories:
   - 编程
+abbrlink: 4166574576
+date: 2021-08-18 17:20:28
 ---
 
 ```PHP

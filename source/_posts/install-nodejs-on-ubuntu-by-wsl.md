@@ -1,6 +1,5 @@
 ---
 title: WSL Ubuntu 下正确安装 NodeJS 的方式
-date: 2023-05-07 18:28:02
 tags:
   - wsl
   - ubuntu
@@ -8,6 +7,8 @@ tags:
   - npm
 categories:
   - 运维
+abbrlink: 1971026844
+date: 2023-05-07 18:28:02
 ---
 
 ## 前提一定要看

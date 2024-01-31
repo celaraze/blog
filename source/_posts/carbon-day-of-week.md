@@ -1,11 +1,12 @@
 ---
 title: Carbon 处理某日是周几
-date: 2021-08-18 16:54:38
 tags:
   - carbon
   - php
-categories: 
+categories:
   - 编程
+abbrlink: 2307852876
+date: 2021-08-18 16:54:38
 ---
 
 ```

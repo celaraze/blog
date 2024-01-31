@@ -1,10 +1,11 @@
 ---
 title: 手持PDA上的激光扫码完美解决方案
-date: 2021-08-18 16:52:58
-tags: 
+tags:
   - uniapp
-categories: 
+categories:
   - 方案
+abbrlink: 1961076235
+date: 2021-08-18 16:52:58
 ---
 
 > 支持所有版本

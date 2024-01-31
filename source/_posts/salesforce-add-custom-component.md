@@ -1,8 +1,9 @@
 ---
 title: Salesforce 添加自定义组件
-date: 2021-08-18 16:58:48
-tags: 
+tags:
   - salesforce
+abbrlink: 1222187043
+date: 2021-08-18 16:58:48
 ---
 
 ```HTML

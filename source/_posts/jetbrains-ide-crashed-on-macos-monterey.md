@@ -1,11 +1,12 @@
 ---
 title: Jetbrains IDE 全线在 macOS Monterey 上崩溃的解决办法
-date: 2021-09-17 09:27:48
 tags:
   - apple
   - jetbrains
 categories:
   - 运维
+abbrlink: 1218852091
+date: 2021-09-17 09:27:48
 ---
 
  最近的 Monterey Beta 6 更新过后，Jetbrains 的全部 IDE 都无法打开，发生报错的问题，仔细一查是 Java 版本的 BUG。

@@ -1,11 +1,12 @@
 ---
 title: Ubuntu 20.04 安装 L2TP 服务
-date: 2021-08-18 17:12:44
 tags:
   - ubuntu
   - l2tp
-categories: 
+categories:
   - 运维
+abbrlink: 988954131
+date: 2021-08-18 17:12:44
 ---
 
 ### 开放端口

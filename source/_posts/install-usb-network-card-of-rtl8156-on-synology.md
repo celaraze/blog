@@ -1,10 +1,11 @@
 ---
 title: 群晖安装 RTL8156 USB 2.5G 网卡驱动
-date: 2023-04-28 19:29:44
 tags:
   - synology
 categories:
   - 运维
+abbrlink: 410855367
+date: 2023-04-28 19:29:44
 ---
 
 先确认群晖设备型号对应的 CPU 架构：

@@ -1,12 +1,13 @@
 ---
 title: Redmi Book 14 2023 款使用 Archlinux 指纹认证
-date: 2023-10-03 16:11:34
 tags:
   - archlinux
   - redmibook
   - fingerprint
-categories: 
+categories:
   - 运维
+abbrlink: 772513125
+date: 2023-10-03 16:11:34
 ---
 
 ## 前提

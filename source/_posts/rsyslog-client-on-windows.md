@@ -1,11 +1,12 @@
 ---
 title: Windows 下安装 rsyslog 客户端
-date: 2023-05-04 15:18:09
 tags:
   - windows
   - rsyslog
 categories:
   - 运维
+abbrlink: 1496507689
+date: 2023-05-04 15:18:09
 ---
 下载：https://code.google.com/archive/p/eventlog-to-syslog/downloads
 

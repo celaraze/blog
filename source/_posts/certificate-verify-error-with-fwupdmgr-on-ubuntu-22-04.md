@@ -1,10 +1,11 @@
 ---
 title: Ubuntu22.04中使用fwupdmgr返回证书验证错误的问题
-date: 2023-03-31 11:01:46
-tags: 
+tags:
   - ubuntu
-categories: 
+categories:
   - 运维
+abbrlink: 502798705
+date: 2023-03-31 11:01:46
 ---
 
 ## 错误描述

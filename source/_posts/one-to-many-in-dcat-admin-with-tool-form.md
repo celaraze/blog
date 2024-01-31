@@ -1,11 +1,12 @@
 ---
 title: DcatAdmin 工具表单实现一对多读写
-date: 2021-08-18 17:07:27
 tags:
   - laravel
   - dcatadmin
-categories: 
+categories:
   - 编程
+abbrlink: 3753227536
+date: 2021-08-18 17:07:27
 ---
 
 在 DcatAdmin 的工具表单中，是没有一对多的字段的，要实现这一个也很简单。

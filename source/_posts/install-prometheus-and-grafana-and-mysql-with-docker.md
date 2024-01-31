@@ -1,6 +1,5 @@
 ---
 title: Docker 安装 Prometheus & Grafana 监控 MySQL 性能指标
-date: 2023-05-03 12:19:36
 tags:
   - docker
   - prometheus
@@ -8,6 +7,8 @@ tags:
   - mysql
 categories:
   - 运维
+abbrlink: 2478984414
+date: 2023-05-03 12:19:36
 ---
 
 ## Prometheus

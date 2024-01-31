@@ -1,12 +1,13 @@
 ---
 title: macOS 内 Nginx & PHP 单服务器配置模版
-date: 2021-08-18 17:08:28
 tags:
   - macos
   - nginx
   - php
-categories: 
+categories:
   - 运维
+abbrlink: 3222787883
+date: 2021-08-18 17:08:28
 ---
 
 ```

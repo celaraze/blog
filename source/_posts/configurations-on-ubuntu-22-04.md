@@ -1,10 +1,11 @@
 ---
 title: Ubuntu22.04个人安装配置
-date: 2023-03-29 16:06:13
-tags: 
+tags:
   - ubuntu
-categories: 
+categories:
   - 运维
+abbrlink: 1766885307
+date: 2023-03-29 16:06:13
 ---
 
 ## 配置 oh-my-zsh

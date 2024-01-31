@@ -1,10 +1,11 @@
 ---
 title: 在 Linux 中安装 Parallels Tools
-date: 2023-02-11 22:53:19
 tags:
   - linux
-categories: 
+categories:
   - 运维
+abbrlink: 3211133465
+date: 2023-02-11 22:53:19
 ---
 
 ```shell

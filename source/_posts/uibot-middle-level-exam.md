@@ -1,10 +1,11 @@
 ---
 title: uibot 中级认证实操题
-date: 2021-08-18 16:51:42
 tags:
   - uibot
 categories:
   - 运维
+abbrlink: 2759400685
+date: 2021-08-18 16:51:42
 ---
 
 ```

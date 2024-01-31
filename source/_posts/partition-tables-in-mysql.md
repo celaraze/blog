@@ -1,10 +1,11 @@
 ---
 title: MySQL8中的分区表
-date: 2023-03-16 10:54:28
 tags:
   - mysql
-categories: 
+categories:
   - 编程
+abbrlink: 1412232896
+date: 2023-03-16 10:54:28
 ---
 
 > 如果已经存在数据，操作前记得备份数据

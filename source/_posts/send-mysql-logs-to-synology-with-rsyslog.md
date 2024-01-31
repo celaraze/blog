@@ -1,12 +1,13 @@
 ---
 title: 使用rsyslog远程发送MySQL查询日志到群晖日志中心
-date: 2023-03-15 18:06:19
 tags:
   - mysql
   - syslog
   - synology
 categories:
   - 运维
+abbrlink: 358764167
+date: 2023-03-15 18:06:19
 ---
 
 ## 客户机的 MySQL 配置

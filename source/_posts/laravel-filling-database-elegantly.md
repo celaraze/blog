@@ -1,10 +1,11 @@
 ---
 title: 优雅地填充 Laravel 数据库数据
-date: 2021-08-18 17:03:56
-tags: 
+tags:
   - laravel
-categories: 
+categories:
   - 编程
+abbrlink: 2154632179
+date: 2021-08-18 17:03:56
 ---
 
 ## 背景

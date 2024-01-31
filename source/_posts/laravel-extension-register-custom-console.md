@@ -1,11 +1,12 @@
 ---
 title: 扩展注册自定义命令到 Laravel
-date: 2021-08-18 16:55:42
 tags:
   - laravel
   - php
-categories: 
+categories:
   - 编程
+abbrlink: 3715223549
+date: 2021-08-18 16:55:42
 ---
 
 ```PHP

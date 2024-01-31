@@ -1,11 +1,12 @@
 ---
 title: 微信小程序 getUserInfo 改造为 getUserProfile
-date: 2021-08-18 16:47:35
 tags:
   - 微信
   - 小程序
 categories:
   - 编程
+abbrlink: 128447151
+date: 2021-08-18 16:47:35
 ---
 
 > 支持版本： https://developers.weixin.qq.com/community/develop/doc/000cacfa20ce88df04cb468bc52801

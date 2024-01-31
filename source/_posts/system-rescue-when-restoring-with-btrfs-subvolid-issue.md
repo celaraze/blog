@@ -1,12 +1,13 @@
 ---
 title: 救砖行动：使用 btrfs 恢复快照后无法启动
-date: 2023-09-27 00:05:38
 tags:
   - linux
   - btrfs
   - timeshift
 categories:
   - 运维
+abbrlink: 758099829
+date: 2023-09-27 00:05:38
 ---
 
 ## 问题

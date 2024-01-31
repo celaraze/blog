@@ -1,11 +1,12 @@
 ---
 title: 自己动手编译 OpenWRT 固件
-date: 2023-03-07 13:33:35
 tags:
   - openwrt
   - linux
 categories:
   - 运维
+abbrlink: 2113144894
+date: 2023-03-07 13:33:35
 ---
 
 1：用于编译的系统一定要是 Debian 11 或者 Ubuntu LTS，推荐使用 Ubuntu 22.04 LTS。

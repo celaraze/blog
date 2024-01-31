@@ -1,11 +1,12 @@
 ---
 title: 一行命令设置 pip 镜像
-date: 2021-08-19 00:09:42
 tags:
   - python
   - pip
-categories: 
+categories:
   - 编程
+abbrlink: 1857510459
+date: 2021-08-19 00:09:42
 ---
 
 ```

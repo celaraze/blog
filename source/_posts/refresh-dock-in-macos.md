@@ -1,10 +1,11 @@
 ---
 title: macOS 刷新应用菜单图标
-date: 2021-08-18 17:11:53
-tags: 
+tags:
   - macos
-categories: 
+categories:
   - 运维
+abbrlink: 996144328
+date: 2021-08-18 17:11:53
 ---
 
 ```

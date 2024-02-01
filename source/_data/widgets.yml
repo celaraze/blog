@@ -1,8 +1,6 @@
-welcome:
+gfw:
   layout: markdown
-  title: 欢迎
+  title: 小提示
   content: |
-    这是我的个人博客，在此分享我的学习笔记和生活感悟。
-    <br>
-    **本站部分资源依赖 Github，如遇到页面无法访问的情况，请尝试使用代理。**
+    本站部分资源依赖 Github，如遇到页面无法访问的情况，请尝试使用代理。
     

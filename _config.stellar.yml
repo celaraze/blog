@@ -1,5 +1,5 @@
 open_graph:
-  enable: true
+  enable: false
   twitter_id: # for open_graph meta
 
 article:
@@ -55,6 +55,9 @@ inject:
   script:
 
 style:
+  sidebar:
+    background: 'url(https://lab.celaraze.com:9999/blog/background-sidebar.jpg)'
+    blur: true # 在图片上层增加高斯模糊效果（同时附带饱和度增强效果）
   font-family:
     body: '"LXGW WenKai Screen", "Microsoft Yahei", sans-serif'
 
@@ -78,4 +81,7 @@ comments:
     data-loading: lazy
     crossorigin: anonymous
 
-sidebar:
+lazyload:
+  enable: true # [hexo clean && hexo s] is required after changing this value.
+  js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  transition: blur # blur, fade

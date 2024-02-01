@@ -19,9 +19,20 @@
   <title>Laravel 与 SAP 集成出现的 unicode 编码问题 - Celaraze Blog</title>
 
   
-  <meta name="description" content="使用 Laravel 内建的 HTTP Client 发送 POST 请求给 SAP 会因为编码问题造成中文解析错误，显示为 &#x2F;u 开头的 unicode 字符。
-尝试加入 content-type: application/json;charset=utf-8 也无效。
-可以使用以...">
+    <meta name="description" content="使用 Laravel 内建的 HTTP Client 发送 POST 请求给 SAP 会因为编码问题造成中文解析错误，显示为 &#x2F;u 开头的 unicode 字符。 尝试加入 content-type: application&#x2F;json;charset&#x3D;utf-8 也无效。 可以使用以下方式发送 Raw Body Data 解决： 12345$data &#x3D; [    &#x27;name&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Laravel 与 SAP 集成出现的 unicode 编码问题">
+<meta property="og:url" content="https://celaraze.com/posts/3939004902.html">
+<meta property="og:site_name" content="Celaraze Blog">
+<meta property="og:description" content="使用 Laravel 内建的 HTTP Client 发送 POST 请求给 SAP 会因为编码问题造成中文解析错误，显示为 &#x2F;u 开头的 unicode 字符。 尝试加入 content-type: application&#x2F;json;charset&#x3D;utf-8 也无效。 可以使用以下方式发送 Raw Body Data 解决： 12345$data &#x3D; [    &#x27;name&amp;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-12-10T08:33:37.000Z">
+<meta property="article:modified_time" content="2024-01-31T08:27:55.037Z">
+<meta property="article:author" content="Celaraze">
+<meta property="article:tag" content="laravel">
+<meta name="twitter:card" content="summary">
+  
+  
   
   <meta name="keywords" content="laravel">
 

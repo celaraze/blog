@@ -19,8 +19,20 @@
   <title>PHP 注解路由实现原理 - Celaraze Blog</title>
 
   
-  <meta name="description" content="PHP8 新特性支持注解（Attribute），其实和 Java 的注解很类似，因为是新特性刚出不久，生态还需要完善。这里我简单说一下实现原理，代码仅作为参考并非完整的实现过程，但是核心逻辑已经阐明清楚。
-大致实现过程为：了解 Laravel 的路由注册过程，通过反射获取定义过注解路由的方法，...">
+    <meta name="description" content="PHP8 新特性支持注解（Attribute），其实和 Java 的注解很类似，因为是新特性刚出不久，生态还需要完善。这里我简单说一下实现原理，代码仅作为参考并非完整的实现过程，但是核心逻辑已经阐明清楚。 大致实现过程为：了解 Laravel 的路由注册过程，通过反射获取定义过注解路由的方法，接着将注解路由的参数和这个方法统一注册到 Laravel 的路由中，这样在整个应用声明周期内即可完成注解路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP 注解路由实现原理">
+<meta property="og:url" content="https://celaraze.com/posts/1603188488.html">
+<meta property="og:site_name" content="Celaraze Blog">
+<meta property="og:description" content="PHP8 新特性支持注解（Attribute），其实和 Java 的注解很类似，因为是新特性刚出不久，生态还需要完善。这里我简单说一下实现原理，代码仅作为参考并非完整的实现过程，但是核心逻辑已经阐明清楚。 大致实现过程为：了解 Laravel 的路由注册过程，通过反射获取定义过注解路由的方法，接着将注解路由的参数和这个方法统一注册到 Laravel 的路由中，这样在整个应用声明周期内即可完成注解路">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-08-18T09:02:29.000Z">
+<meta property="article:modified_time" content="2024-01-31T08:08:25.317Z">
+<meta property="article:author" content="Celaraze">
+<meta property="article:tag" content="php">
+<meta name="twitter:card" content="summary">
+  
+  
   
   <meta name="keywords" content="php">
 

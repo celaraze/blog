@@ -190,13 +190,13 @@
       
         <tags>
             
+            <tag> mysql </tag>
+            
             <tag> docker </tag>
             
             <tag> prometheus </tag>
             
             <tag> grafana </tag>
-            
-            <tag> mysql </tag>
             
         </tags>
       

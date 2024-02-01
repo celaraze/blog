@@ -1,6 +1,6 @@
 ---
 title: CAT官方文档
-menu_id: cat
+menu_id: wiki
 ---
 
 {% ghcard celaraze/cat theme:dark %}

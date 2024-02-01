@@ -63,29 +63,27 @@
   --text-code: #14181f;
   --theme-link: #2094f3;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --site-bg: #1c1e21;
-    --card: #373d43;
-    --block: #26292c;
-    --block-border: #383d42;
-    --block-hover: #2f3337;
-    --alpha20: rgba(0,0,0,0.2);
-    --alpha50: rgba(0,0,0,0.5);
-    --alpha60: rgba(0,0,0,0.6);
-    --alpha75: rgba(0,0,0,0.75);
-    --alpha100: #000;
-    --sidebar-bg: #383d42;
-    --text: #fff;
-    --text-p1: #ccc;
-    --text-p2: #b3b3b3;
-    --text-p3: #858585;
-    --text-p4: #707070;
-    --text-meta: #4d4d4d;
-    --text-code: #fff;
-  }
+:root {
+  --site-bg: #1c1e21;
+  --card: #373d43;
+  --block: #26292c;
+  --block-border: #383d42;
+  --block-hover: #2f3337;
+  --alpha20: rgba(0,0,0,0.2);
+  --alpha50: rgba(0,0,0,0.5);
+  --alpha60: rgba(0,0,0,0.6);
+  --alpha75: rgba(0,0,0,0.75);
+  --alpha100: #000;
+  --sidebar-bg: #383d42;
+  --text: #fff;
+  --text-p1: #ccc;
+  --text-p2: #b3b3b3;
+  --text-p3: #858585;
+  --text-p4: #707070;
+  --text-meta: #4d4d4d;
+  --text-code: #fff;
 }
-@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
+@media screen and (max-width: 667px) {
   :root {
     --site-bg: #000;
   }
@@ -326,11 +324,7 @@ a.button.start.gradient {
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-}
-@media (prefers-color-scheme: dark) {
-  .float-panel {
-    --blur-bg: rgba(0,0,0,0.4);
-  }
+  --blur-bg: rgba(0,0,0,0.4);
 }
 .sidebar-toggle.mobile {
   cursor: pointer;
@@ -1106,10 +1100,8 @@ div.toast.show {
 .article.banner {
   --button-hover-bg: rgba(0,0,0,0.05);
 }
-@media (prefers-color-scheme: dark) {
-  .article.banner {
-    --button-hover-bg: rgba(255,255,255,0.15);
-  }
+.article.banner {
+  --button-hover-bg: rgba(255,255,255,0.15);
 }
 .md-text .article-footer {
   margin-top: 4rem;
@@ -2207,105 +2199,103 @@ article.md-text.content+.related-wrap {
   --text-p3: #ddd;
   --text-code: #fff;
 }
-@media (prefers-color-scheme: dark) {
-  .tag-plugin.tag {
-    --theme: #1cd0fd;
-    --theme-border: #1f505c;
-    --theme-block: #222d2f;
-    --theme-codeblock: #283133;
-    --text: #b3f0ff;
-    --text-p1: #9fd2df;
-    --text-p2: #7edaf1;
-  }
-  .colorful[color='red'] {
-    --theme: #f44336;
-    --theme-border: #5c231f;
-    --theme-block: #2f2322;
-    --theme-codeblock: #332928;
-    --text: #ffb8b3;
-    --text-p1: #dfa49f;
-    --text-p2: #f1867e;
-  }
-  .colorful[color='orange'] {
-    --theme: #fa6400;
-    --theme-border: #5c371f;
-    --theme-block: #2f2722;
-    --theme-codeblock: #332d28;
-    --text: #ffd1b3;
-    --text-p1: #dfb99f;
-    --text-p2: #f1ac7e;
-  }
-  .colorful[color='yellow'] {
-    --theme: #f2e03d;
-    --theme-border: #5c561f;
-    --theme-block: #2f2e22;
-    --theme-codeblock: #333228;
-    --text: #fff7b3;
-    --text-p1: #dfd99f;
-    --text-p2: #f1e57e;
-  }
-  .colorful[color='green'] {
-    --theme: #3dc550;
-    --theme-border: #1f5c27;
-    --theme-block: #222f24;
-    --theme-codeblock: #28332a;
-    --text: #b3ffbd;
-    --text-p1: #9fdfa8;
-    --text-p2: #7ef18e;
-  }
-  .colorful[color='cyan'] {
-    --theme: #1bcdfc;
-    --theme-border: #1f4f5c;
-    --theme-block: #222d2f;
-    --theme-codeblock: #283133;
-    --text: #b3efff;
-    --text-p1: #9fd2df;
-    --text-p2: #7ed9f1;
-  }
-  .colorful[color='blue'] {
-    --theme: #2196f3;
-    --theme-border: #1f415c;
-    --theme-block: #222a2f;
-    --theme-codeblock: #282f33;
-    --text: #b3ddff;
-    --text-p1: #9fc3df;
-    --text-p2: #7ebef1;
-  }
-  .colorful[color='purple'] {
-    --theme: #9c27b0;
-    --theme-border: #531f5c;
-    --theme-block: #2d222f;
-    --theme-codeblock: #322833;
-    --text: #f4b3ff;
-    --text-p1: #d69fdf;
-    --text-p2: #e07ef1;
-  }
-  .colorful[color='light'] {
-    --theme-border: #fff;
-    --theme-block: #fff;
-    --text: #000;
-    --text-p1: #111;
-    --text-p2: #1f1f1f;
-    --text-p3: #555;
-    --text-code: #fff;
-  }
-  .colorful[color='dark'] {
-    --theme-border: #000;
-    --theme-block: #111;
-    --text: #fff;
-    --text-p1: #fff;
-    --text-p2: #e0e0e0;
-    --text-p3: #ddd;
-    --text-code: #fff;
-  }
-  .colorful[color='warning'],
-  .colorful[color='light'] {
-    --text: #000;
-    --text-p1: #111;
-    --text-p2: #1f1f1f;
-    --text-p3: #555;
-    --text-code: #fff;
-  }
+.tag-plugin.tag {
+  --theme: #1cd0fd;
+  --theme-border: #1f505c;
+  --theme-block: #222d2f;
+  --theme-codeblock: #283133;
+  --text: #b3f0ff;
+  --text-p1: #9fd2df;
+  --text-p2: #7edaf1;
+}
+.colorful[color='red'] {
+  --theme: #f44336;
+  --theme-border: #5c231f;
+  --theme-block: #2f2322;
+  --theme-codeblock: #332928;
+  --text: #ffb8b3;
+  --text-p1: #dfa49f;
+  --text-p2: #f1867e;
+}
+.colorful[color='orange'] {
+  --theme: #fa6400;
+  --theme-border: #5c371f;
+  --theme-block: #2f2722;
+  --theme-codeblock: #332d28;
+  --text: #ffd1b3;
+  --text-p1: #dfb99f;
+  --text-p2: #f1ac7e;
+}
+.colorful[color='yellow'] {
+  --theme: #f2e03d;
+  --theme-border: #5c561f;
+  --theme-block: #2f2e22;
+  --theme-codeblock: #333228;
+  --text: #fff7b3;
+  --text-p1: #dfd99f;
+  --text-p2: #f1e57e;
+}
+.colorful[color='green'] {
+  --theme: #3dc550;
+  --theme-border: #1f5c27;
+  --theme-block: #222f24;
+  --theme-codeblock: #28332a;
+  --text: #b3ffbd;
+  --text-p1: #9fdfa8;
+  --text-p2: #7ef18e;
+}
+.colorful[color='cyan'] {
+  --theme: #1bcdfc;
+  --theme-border: #1f4f5c;
+  --theme-block: #222d2f;
+  --theme-codeblock: #283133;
+  --text: #b3efff;
+  --text-p1: #9fd2df;
+  --text-p2: #7ed9f1;
+}
+.colorful[color='blue'] {
+  --theme: #2196f3;
+  --theme-border: #1f415c;
+  --theme-block: #222a2f;
+  --theme-codeblock: #282f33;
+  --text: #b3ddff;
+  --text-p1: #9fc3df;
+  --text-p2: #7ebef1;
+}
+.colorful[color='purple'] {
+  --theme: #9c27b0;
+  --theme-border: #531f5c;
+  --theme-block: #2d222f;
+  --theme-codeblock: #322833;
+  --text: #f4b3ff;
+  --text-p1: #d69fdf;
+  --text-p2: #e07ef1;
+}
+.colorful[color='light'] {
+  --theme-border: #fff;
+  --theme-block: #fff;
+  --text: #000;
+  --text-p1: #111;
+  --text-p2: #1f1f1f;
+  --text-p3: #555;
+  --text-code: #fff;
+}
+.colorful[color='dark'] {
+  --theme-border: #000;
+  --theme-block: #111;
+  --text: #fff;
+  --text-p1: #fff;
+  --text-p2: #e0e0e0;
+  --text-p3: #ddd;
+  --text-code: #fff;
+}
+.colorful[color='warning'],
+.colorful[color='light'] {
+  --text: #000;
+  --text-p1: #111;
+  --text-p2: #1f1f1f;
+  --text-p3: #555;
+  --text-code: #fff;
 }
 .md-text .tag-plugin.copy {
   display: flex;
@@ -4379,7 +4369,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_left {
   background-size: cover;
-  background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg");
+  background-image: url("https://lab.celaraze.com:9999/blog/background-sidebar.jpg");
 }
 .l_left .sidebar-container {
   height: 100%;

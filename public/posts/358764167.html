@@ -19,8 +19,22 @@
   <title>使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心 - Celaraze Blog</title>
 
   
-  <meta name="description" content="客户机的 MySQL 配置默认 MySQL 不开启查询日志记录，这个东西很影响性能，如果服务器够强，可以开启，方法如下：
-123456789# 进入到 mysql 的配置文件，例如在 Ubuntu 中默认位置为：# /etc/mysql/mysql.conf.d/mysqld.cnf# 找到以...">
+    <meta name="description" content="客户机的 MySQL 配置默认 MySQL 不开启查询日志记录，这个东西很影响性能，如果服务器够强，可以开启，方法如下： 123456789# 进入到 mysql 的配置文件，例如在 Ubuntu 中默认位置为：# &#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf# 找到以下键值对，取消前面的注释使其生效general_log_file        &#x3D; &#x2F;var&#x2F;log&#x2F;my">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心">
+<meta property="og:url" content="https://celaraze.com/posts/358764167.html">
+<meta property="og:site_name" content="Celaraze Blog">
+<meta property="og:description" content="客户机的 MySQL 配置默认 MySQL 不开启查询日志记录，这个东西很影响性能，如果服务器够强，可以开启，方法如下： 123456789# 进入到 mysql 的配置文件，例如在 Ubuntu 中默认位置为：# &#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;mysqld.cnf# 找到以下键值对，取消前面的注释使其生效general_log_file        &#x3D; &#x2F;var&#x2F;log&#x2F;my">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-15T10:06:19.000Z">
+<meta property="article:modified_time" content="2024-01-31T08:33:43.548Z">
+<meta property="article:author" content="Celaraze">
+<meta property="article:tag" content="mysql">
+<meta property="article:tag" content="syslog">
+<meta property="article:tag" content="synology">
+<meta name="twitter:card" content="summary">
+  
+  
   
   <meta name="keywords" content="mysql,syslog,synology">
 

@@ -107,10 +107,10 @@ comments:
   # https://giscus.app/zh-CN
   giscus:
     src: https://giscus.xaox.cc/client.js
-    data-repo: celaraze/blog-discussions # [在此输入仓库]
-    data-repo-id: R_kgDOLMC0nQ # [在此输入仓库 ID]
+    data-repo: celaraze/blog # [在此输入仓库]
+    data-repo-id: R_kgDOLL7K6g # [在此输入仓库 ID]
     data-category: Announcements  # [在此输入分类名]
-    data-category-id: DIC_kwDOLMC0nc4Cc1ct
+    data-category-id: DIC_kwDOLL7K6s4Cc3Vc
     data-mapping: pathname
     data-strict: 0
     data-reactions-enabled: 1

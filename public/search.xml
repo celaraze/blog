@@ -107,9 +107,9 @@
       
         <tags>
             
-            <tag> ubuntu </tag>
-            
             <tag> wsl </tag>
+            
+            <tag> ubuntu </tag>
             
             <tag> nodejs </tag>
             
@@ -190,13 +190,13 @@
       
         <tags>
             
+            <tag> mysql </tag>
+            
             <tag> docker </tag>
             
             <tag> prometheus </tag>
             
             <tag> grafana </tag>
-            
-            <tag> mysql </tag>
             
         </tags>
       
@@ -668,9 +668,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
             <tag> easywechat </tag>
             
@@ -1080,9 +1080,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
         </tags>
       
@@ -1107,9 +1107,9 @@
       
         <tags>
             
-            <tag> php </tag>
-            
             <tag> carbon </tag>
+            
+            <tag> php </tag>
             
         </tags>
       
@@ -1311,9 +1311,9 @@
       
         <tags>
             
-            <tag> laravel </tag>
-            
             <tag> php </tag>
+            
+            <tag> laravel </tag>
             
         </tags>
       

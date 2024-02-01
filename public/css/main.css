@@ -4363,7 +4363,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   margin-bottom: 8px;
 }
 .l_left {
-  margin-right: 8px;
+  margin: 8px 8px 8px 0;
   height: calc(100vh - 16px);
   border-radius: 12px;
   overflow: hidden;

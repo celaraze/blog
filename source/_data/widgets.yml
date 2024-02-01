@@ -1,0 +1,11 @@
+welcome:
+  layout: markdown
+  title: 欢迎
+#  linklist: # 与 linklist 组件写法相同
+#    columns: 1
+#    items:
+#      - icon:
+#        title:
+#        url:
+  content: |
+    这是我的个人博客，在此分享我的学习笔记和生活感悟。

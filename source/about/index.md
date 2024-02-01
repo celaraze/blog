@@ -1,6 +1,12 @@
 ---
-title: about
+title: 关于我
+breadcrumb: false
+menu_id: about
+comments: false
 ---
+{% banner Celaraze 这是个人简介 avatar:https://lab.celaraze.com:9999/blog/logo.png bg:https://lab.celaraze.com:9999/blog/background-nebula.jpg %}
+{% endbanner %}
+
 1991 年 00 岁：在常熟市徐市镇（现董浜）出生。
 
 1998 年 07 岁：一年级，就读常熟市徐市中心小学。

@@ -3,6 +3,8 @@ title: CAT官方文档
 menu_id: cat
 ---
 
+{% ghcard celaraze/cat theme:dark %}
+
 这里是 CAT 文档中心，有任何使用问题都可参考本份文档。
 
 ## 前世今生
@@ -32,8 +34,9 @@ menu_id: cat
 
 ## 部署
 
-### Docker run
+{% tabs active:1 align:left %}
 
+<!-- tab docker -->
 1，执行 `docker pull celaraze/cat`。
 
 2，执行 `docker volume create cat_database` 使数据库持久化。
@@ -65,7 +68,7 @@ docker run -itd -p 8000:8000 \
 
 7，访问 `http://localhost:8000`，使用账户密码 `admin@localhost.com / admin` 登陆使用。
 
-### Docker compose
+<!-- tab docker-compose -->
 
 1，执行 `git clone https://github.com/celaraze/cat`。
 
@@ -73,11 +76,13 @@ docker run -itd -p 8000:8000 \
 
 3，同 Docker 部署步骤，需要启动一次容器后并将 `.env` 文件复制到宿主机上重新挂载启动容器，即可实现配置文件的持久化。
 
-### Docker build
+<!-- tab docker build -->
 
 1，执行 `git clone https://github.com/celaraze/cat`。
 
 2，执行 `cd cat && docker build -t celaraze/cat . --no-cache`。
+
+{% endtabs %}
 
 ### 使用二进制模式运行
 

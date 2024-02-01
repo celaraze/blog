@@ -1,6 +1,7 @@
 ---
 title: 时光
 menu_id: essays
+breadcrumb: false
 ---
 
 {% timeline %}

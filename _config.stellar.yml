@@ -106,7 +106,7 @@ comments:
   # giscus
   # https://giscus.app/zh-CN
   giscus:
-    src: https://giscus.app/client.js
+    src: https://giscus.xaox.cc/client.js
     data-repo: celaraze/blog-discussions # [在此输入仓库]
     data-repo-id: R_kgDOLMC0nQ # [在此输入仓库 ID]
     data-category: Announcements  # [在此输入分类名]

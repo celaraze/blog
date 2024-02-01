@@ -1,6 +1,3 @@
-[submodule "themes/oranges"]
-	path = themes/oranges
-	url = https://github.com/zchengsite/hexo-theme-oranges.git
 [submodule "themes/stellar"]
 	path = themes/stellar
 	url = https://github.com/xaoxuu/hexo-theme-stellar.git

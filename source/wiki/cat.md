@@ -1,9 +1,8 @@
 ---
 title: CAT官方文档
 menu_id: wiki
+repo: celaraze/cat
 ---
-
-{% ghcard celaraze/cat theme:dark %}
 
 这里是 CAT 文档中心，有任何使用问题都可参考本份文档。
 

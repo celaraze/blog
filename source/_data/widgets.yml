@@ -4,3 +4,16 @@ gfw:
   content: |
     本站部分资源依赖 Github，如遇到页面无法访问的情况，请尝试使用代理。
     
+projects:
+  layout: linklist
+  columns: 1
+  items:
+    - icon: '<svg...></svg>' # 或者 icons.yml 中设置的 icon 名称
+      title: 快速跳转：CAT 官方文档
+      url: /wiki/cat.html
+
+ghuser:
+  layout: ghuser
+  username: celaraze # your github login username
+  avatar: false # show avatar or not
+  menu: true # show menu or not

@@ -1,6 +1,15 @@
 ---
-title: PHP 最大连续签到天数
+title: PHP 代码片段
 ---
+
+## 数组排序
+
+```php
+$keys = array_column($array, 'id');
+array_multisort($keys, SORT_DESC, $array);
+```
+
+## 最大连续签到天数
 
 ```php
 $continue_days = 1;

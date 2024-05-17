@@ -1,0 +1,36 @@
+<div
+  style="display: flex; justify-content: center; align-items: center; height: 300px;"
+>
+  <div id="coding-chart"></div>
+</div>
+
+<script>
+  import ApexCharts from "apexcharts";
+  var options = {
+    chart: {
+      type: "radar",
+      toolbar: {
+        show: false, // 隐藏工具栏
+      },
+      width: "100%", // 设置图表的宽度
+      height: "85%", // 设置图表的高度
+    },
+    series: [
+      {
+        name: "熟练度",
+        data: [90, 80, 70, 60, 50, 50, 50],
+      },
+    ],
+    labels: ["PHP", "Python", "JavaScript", "Java", "C#", "C/C++", "Go"],
+    yaxis: {
+      max: 100, // 设置 y 轴的最大值为 100
+    },
+    fill: {
+      opacity: 0.9,
+      colors: ["#ff0000"],
+    },
+  };
+
+  var chart = new ApexCharts(document.querySelector("#coding-chart"), options);
+  chart.render();
+</script>

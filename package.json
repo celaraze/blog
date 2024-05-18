@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.22.4",
     "apexcharts": "^3.49.1",
     "astro": "^4.3.5",
+    "lxgw-wenkai-screen-webfont": "^1.7.0",
     "sharp": "^0.32.5"
   }
 }

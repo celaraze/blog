@@ -1,5 +1,6 @@
 ---
 title: 在 Linux 中安装 Parallels Tools
+date: 2024-05-19
 ---
 
 ```shell

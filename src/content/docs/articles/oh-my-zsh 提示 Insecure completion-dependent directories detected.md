@@ -1,5 +1,6 @@
 ---
 title: oh-my-zsh 提示 Insecure completion-dependent directories detected
+date: 2024-05-19
 ---
 
 ```

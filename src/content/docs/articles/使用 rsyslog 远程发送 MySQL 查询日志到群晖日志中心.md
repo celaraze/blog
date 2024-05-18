@@ -1,5 +1,6 @@
 ---
 title: 使用 rsyslog 远程发送 MySQL 查询日志到群晖日志中心
+date: 2024-05-19
 ---
 
 ## 客户机的 MySQL 配置

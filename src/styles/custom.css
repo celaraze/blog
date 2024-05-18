@@ -1,7 +1,18 @@
-[data-has-hero] header {
-  /*border-bottom: 1px solid transparent;*/
-  /*background-color: transparent;*/
+@import url(https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css);
+
+* {
+  font-family: "LXGW WenKai Screen", "Microsoft Yahei", sans-serif !important;
 }
+
+/* header {
+  border-bottom: 1px solid transparent !important;
+  background-color: transparent !important;
+} */
+
+/* #starlight__sidebar {
+  border-bottom: 1px solid transparent !important;
+  background-color: transparent !important;
+} */
 
 [data-has-hero] .page {
   position: relative;

@@ -1,5 +1,6 @@
 ---
 title: Composer 钩子执行更新脚本
+date: 2024-05-19
 ---
 
 每次执行完 `composer update` 后，如果相关依赖包有升级后的手动维护动作，比如 DcatAdmin

@@ -1,5 +1,6 @@
 ---
 title: Ubuntu 22.04 个人安装配置
+date: 2024-05-19
 ---
 
 ## 配置 oh-my-zsh

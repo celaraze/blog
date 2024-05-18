@@ -1,5 +1,6 @@
 ---
 title: 移除 Ubuntu 中的 APT Repository
+date: 2024-05-19
 ---
 
 1：删除源目录中的清单：

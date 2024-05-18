@@ -1,5 +1,6 @@
 ---
 title: WSL Ubuntu 下正确安装 NodeJS 的方式
+date: 2024-05-19
 ---
 
 ## 前提一定要看

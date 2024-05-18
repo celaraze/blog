@@ -4,7 +4,6 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   site: "https://celaraze.com",
-  // base: 'blog',
   integrations: [
     starlight({
       title: "Celaraze Blog",
@@ -13,12 +12,14 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "首页",
+          label: "了解我",
           link: "/",
         },
         {
           label: "文章列表",
-          link: "/articles",
+          autogenerate: { directory: "articles" },
+          collapsed: true,
+          badge: { text: "建议使用搜索", variant: "success" },
         },
         {
           label: "CAT 文档",

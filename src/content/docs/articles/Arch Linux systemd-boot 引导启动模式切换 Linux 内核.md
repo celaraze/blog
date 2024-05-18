@@ -1,5 +1,6 @@
 ---
 title: Arch Linux systemd-boot 引导启动模式切换 Linux 内核
+date: 2024-05-19
 ---
 
 ## 安装内核

@@ -1,5 +1,6 @@
 ---
 title: homebrew 服务错误 uninitialized constant Homebrew Service System
+date: 2024-05-19
 ---
 
 从源重新拉取一下服务更新

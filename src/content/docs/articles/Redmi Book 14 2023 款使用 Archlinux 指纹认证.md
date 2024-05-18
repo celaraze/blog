@@ -1,5 +1,6 @@
 ---
 title: Redmi Book 14 2023 款使用 Archlinux 指纹认证
+date: 2024-05-19
 ---
 
 ## 前提

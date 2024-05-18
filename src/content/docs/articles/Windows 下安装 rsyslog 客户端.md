@@ -1,5 +1,6 @@
 ---
 title: Windows 下安装 rsyslog 客户端
+date: 2024-05-19
 ---
 
 下载：https://code.google.com/archive/p/eventlog-to-syslog/downloads

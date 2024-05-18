@@ -1,5 +1,6 @@
 ---
 title: macOS M1 python 连接 SQLServer
+date: 2024-05-19
 ---
 
 python 版本一定要使用 3.8

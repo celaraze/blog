@@ -1,0 +1,13 @@
+---
+const allArticles = await Astro.glob("../content/docs/articles/*.md");
+---
+
+<ul>
+  {
+    allArticles.map((article) => (
+      <li>
+        <a href={article.url}>{article.frontmatter.title}</a>
+      </li>
+    ))
+  }
+</ul>

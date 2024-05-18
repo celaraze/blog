@@ -17,28 +17,12 @@ export default defineConfig({
           link: "/",
         },
         {
-          label: "运维",
-          autogenerate: { directory: "运维" },
-          collapsed: true,
+          label: "文章列表",
+          link: "/articles",
         },
         {
-          label: "网络安全",
-          autogenerate: { directory: "网络安全" },
-          collapsed: true,
-        },
-        {
-          label: "开发",
-          autogenerate: { directory: "开发" },
-          collapsed: true,
-        },
-        {
-          label: "容器化",
-          autogenerate: { directory: "容器化" },
-          collapsed: true,
-        },
-        {
-          label: "小作文",
-          autogenerate: { directory: "小作文" },
+          label: "CAT 文档",
+          autogenerate: { directory: "projects/cat" },
           collapsed: true,
         },
       ],

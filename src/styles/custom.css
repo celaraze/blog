@@ -1,6 +1,6 @@
 [data-has-hero] header {
-  border-bottom: 1px solid transparent;
-  background-color: transparent;
+  /*border-bottom: 1px solid transparent;*/
+  /*background-color: transparent;*/
 }
 
 [data-has-hero] .page {

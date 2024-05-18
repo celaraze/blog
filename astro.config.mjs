@@ -14,7 +14,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "首页",
-          link: "/首页",
+          link: "/",
         },
         {
           label: "运维",

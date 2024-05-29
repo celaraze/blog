@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
     site: "https://celaraze.github.io",
     base: "blog",
+    outDir: './docs',
     integrations: [
         starlight({
             title: "Celaraze Blog",

@@ -3,8 +3,6 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://celaraze.github.io",
-    base: "blog",
     outDir: './docs',
     integrations: [
         starlight({

@@ -26,6 +26,11 @@ export default defineConfig({
                     autogenerate: {directory: "projects/cat"},
                     collapsed: true,
                 },
+                {
+                    label: "FastService 文档",
+                    autogenerate: {directory: "projects/fastservice"},
+                    collapsed: true,
+                },
             ],
             locales: {
                 root: {

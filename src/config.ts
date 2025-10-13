@@ -16,8 +16,8 @@ export const siteConfig: SiteConfig = {
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/demo-banner.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		enable: true,
+		src: "assets/images/banner.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "bottom", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
@@ -58,7 +58,7 @@ export const profileConfig: ProfileConfig = {
 	bio: "全栈码农，也是一位业余摄影爱好者，闲暇之余会扫街。",
 	links: [
 		{
-			name: "佳能 EOS R6 Mark 2",
+			name: "佳能 EOS R6 Mark II",
 			icon: "streamline-ultimate:camera-display-bold",
 			// Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
@@ -86,9 +86,9 @@ export const profileConfig: ProfileConfig = {
 			url: "https://www.sidande.com/list_18/63.html",
 		},
 		{
-			name: "优篮子 VT-02",
+			name: "优篮子 MT-63",
 			icon: "streamline-ultimate:camera-tripod-bold",
-			url: "https://www.ulanzi.cn/list-sanjiaojia-3.html",
+			url: "https://www.ulanzi.cn/index.php?s=product&c=search&catid=1&keyword=MT-63",
 		},
 	],
 };

@@ -8,8 +8,8 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "拾光巡礼家",
-	subtitle: "一个摄影爱好者的个人博客",
+	title: "遛菌羊",
+	subtitle: "一位常熟摄影爱好者",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
 		position: "bottom", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
-			text: "拾光巡礼家 @常熟", // Credit text to be displayed
+			text: "遛菌羊 @常熟一隅", // Credit text to be displayed
 			url: "#", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
@@ -40,22 +40,13 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/celaraze", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-	],
+	links: [LinkPreset.Home, LinkPreset.Archive, LinkPreset.About],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "拾光巡礼家",
-	bio: "全栈码农，也是一位业余摄影爱好者/",
+	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "遛菌羊",
+	bio: "一位常熟摄影爱好者。",
 	links: [
 		{
 			name: "佳能 EOS R6 Mark II",

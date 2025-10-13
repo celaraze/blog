@@ -8,21 +8,21 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Fuwari",
-	subtitle: "Demo Site",
-	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
+	title: "拾光巡礼家",
+	subtitle: "一个摄影爱好者的个人博客",
+	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: false,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		src: "assets/images/demo-banner.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		position: "bottom", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, // Display the credit text of the banner image
+			text: "拾光巡礼家 @常熟", // Credit text to be displayed
+			url: "#", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -53,26 +53,42 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Lorem Ipsum",
-	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	avatar: "assets/images/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "拾光巡礼家",
+	bio: "全栈码农，也是一位业余摄影爱好者，闲暇之余会扫街。",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "佳能 EOS R6 Mark 2",
+			icon: "streamline-ultimate:camera-display-bold",
+			// Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://m.canon.com.cn/product/r6ii/",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "EF 35mm F1.4L II USM",
+			icon: "streamline-ultimate:lens-shade-bold",
+			url: "https://www.canon.com.cn/product/ef35f14lii/index.html",
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			name: "EF 70-200mm F2.8L II IS USM",
+			icon: "streamline-ultimate:lens-shade-bold",
+			url: "https://www.canon.com.cn/product/ef70200f28lisii/",
+		},
+		{
+			name: "佳能 EF EOS-R 卡口适配器",
+			icon: "streamline-ultimate:swap-camera-bold",
+			url: "https://www.canon.com.cn/accessory/ef/mount.html",
+		},
+		{
+			name: "斯丹德 FK580",
+			icon: "streamline-ultimate:photography-equipment-flash-light-bold",
+			url: "https://www.sidande.com/list_18/63.html",
+		},
+		{
+			name: "优篮子 VT-02",
+			icon: "streamline-ultimate:camera-tripod-bold",
+			url: "https://www.ulanzi.cn/list-sanjiaojia-3.html",
 		},
 	],
 };

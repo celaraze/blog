@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /_astro/
-
-Sitemap: https://celaraze.com/sitemap-index.xml
